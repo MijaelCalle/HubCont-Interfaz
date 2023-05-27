@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="HubCont-Clases">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/HubCont-Clases.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
