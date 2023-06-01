@@ -46,6 +46,8 @@ public class DiseñoContenedores extends JFrame {
     private JButton Cuantos_button;
     private JComboBox cuantosPais_box;
     private JTextField Cant_text;
+    private JButton examenButton;
+    private JTextField ExamenText;
 
 
     private int hubMostrar = 0;
@@ -223,8 +225,20 @@ public class DiseñoContenedores extends JFrame {
             }
         });
 
-
-
-
+    // 5. Examen Boton nuevo
+        examenButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int prioridad = 0;
+                if(a1RadioButton.isSelected()) {
+                    prioridad = 1;
+                } else if(a2RadioButton.isSelected()) {
+                    prioridad = 2;
+                } else if(a3RadioButton.isSelected()) {
+                    prioridad = 3;
+                }
+                ExamenText.setText(String.valueOf(p1.contenedoresPorPais((String) cuantosPais_box.getSelectedItem())));
+            }
+        });
     }
 }
